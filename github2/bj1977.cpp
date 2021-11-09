@@ -2,29 +2,27 @@
 
 using namespace std;
 
-class Perfect_Square
-{
-private:
-	int num1, num2;
-public:
-	Perfect_Square(int n1, int n2): num1(n1),num2(n2) {}
-
-	int IsSquare(int num)
-	{
-		int fnum = num % 10;
-		if (fnum != 0 && fnum != 1 || fnum != 4 || fnum != 5 || fnum != 6 || fnum != 9)
-			return -1;
-		else
-			if (num >= num1 && num <= num2)
-				return num;
-	}
-};
-
 int main()
 {
-	int num1; cin >> num1;
-	int num2; cin >> num2;
+	int num1, num2, sum = 0, sq, i = 1, min = 0;
+	cin >> num1 >> num2;
 
-	Perfect_Square psq(num1, num2);
-	// num이 뭔지 모른다. num은 num1과 num2의 사잇값이 자동으로 나와야 한다.
+	while ((sq = i * i) <= num2)
+	{
+		if (sq >= num1)
+		{
+			sum += sq;
+			if (min == 0) 
+				min = sq;  // 처음에는 0이지만 sq의 값을 계속 업데이트 하면서 min의 값이 변한다.
+		}
+		++i;
+	}
+	if (sum == 0)
+		cout << -1 << endl;
+	else {
+		cout << sum << endl;
+		cout << min << endl;
+	}
 }
+
+// max, min이 작기 때문에 1씩 올리면서 찾는 것이 쉽다.
