@@ -24,7 +24,7 @@ int main()
 				*ename = *pname;
 			}
 		}
-		cout << *pname << endl;
+		cout << pname << endl;
 	}
 	return 0;
 }
