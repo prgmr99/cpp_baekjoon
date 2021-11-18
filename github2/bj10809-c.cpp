@@ -1,8 +1,9 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
-int main()
+/*int main()
 {
 	char words[10];
 
@@ -27,6 +28,19 @@ int main()
 			}
 		}
 		cout << ' ';
+	}
+	return 0;
+}*/
+
+int main(void)
+{
+	string str;
+	cin >> str;
+
+	string str1 = ("abcdefghijklmnopqrstuvwxyz");
+	for (int i = 0; i < str1.size(); i++)
+	{
+		cout << (int)str.find(str1[i]) << " ";  // int로 형변환을 하지 않으면 원하는 값이 나오지 않는다.
 	}
 	return 0;
 }

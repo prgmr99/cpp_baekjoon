@@ -15,22 +15,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="bj1977.cpp">
+    <ClCompile Include="bj1193.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bj11098.cpp">
+    <ClCompile Include="bj10809-c.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bj5635.cpp">
+    <ClCompile Include="bj5635-c.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bj10809.cpp">
+    <ClCompile Include="bj11098-c.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bj1712.cpp">
+    <ClCompile Include="bj2292-c.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bj2292.cpp">
+    <ClCompile Include="bj1977-c.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bj1712-c.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

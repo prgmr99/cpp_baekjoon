@@ -27,10 +27,10 @@ int main()
 	for (int sum = 2; sum <= num; i++) 
 		sum += 6 * i;
 	
-	if (num == 1)
-		cout << 1;
-
+	if (num == 1) i = 1;
+	
 	cout << i;
+
 	return 0;
 }
 // 1. 계속 숫자를 올리면서 num을 초과하면 거기서 스탑!
