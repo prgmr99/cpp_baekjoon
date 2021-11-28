@@ -59,7 +59,7 @@ int main(void)
 	string x, y;
 	cin >> x >> y;
 
-	string bigger;
+	string bigger;   // 새로운 빈 문자열을 생성한다.
 
 	for (int i = 2; i >= 0; i--) {
 		if (x[i] > y[i]) {
@@ -68,7 +68,7 @@ int main(void)
 		else if (x[i] < y[i]) {
 			bigger = y; break;
 		}
-	}
+	}  // 둘 다 만족하지 않는 경우 i--하여 다음 수 진행.
 	cout << bigger[2] << bigger[1] << bigger[0];
 	return 0;
 }

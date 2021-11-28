@@ -17,6 +17,7 @@ int main(void)
 	int max = 0;
 	int cnt = 0;
 	string str;
+
 	cin >> str;
 
 	for (int i = 0; i < str.length(); i++)
@@ -56,10 +57,10 @@ int main(void)
 	cin >> str;
 	for (int i = 0; i < str.length(); i++)
 	{
-		int n = str.at(i);
+		int n = str.at(i);   // i에 위치하는 문자를 반환하는 함수.
 
-		if (n < 97)
-			arr[n - 65]++;  
+		if (n < 97)			 // 대문자 소문자를 구분하지 않기 위해
+			arr[n - 65]++;   // 문자가 있으면 값을 증가시키고 max값을 찾는다.
 		else
 			arr[n - 97]++;  
 	}
@@ -69,13 +70,13 @@ int main(void)
 		if (arr[i] > max_cnt)
 		{
 			max_cnt = arr[i];
-			index = i;
+			index = i;       // max값인 문자를 출력하기 위해 index에 i를 따로 저장했다.
 		}
 	}
 
 	for (int i = 0; i < 26; i++)
 	{
-		if (arr[i] == max_cnt)
+		if (arr[i] == max_cnt)   // 이 부분은 나와 같은 생각.
 		{
 			count++;
 			if (count >= 2)

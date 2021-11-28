@@ -7,7 +7,7 @@ int main(void)
 {
 	int R,T;
 	string S;
-	//int sLen=S.length(); 여기에 위치하면 안된다.
+	//int sLen=S.length(); 여기에 위치하면 안된다. S를 아직 입력받지 않았기 때문이다.
 	cin >> T;
 	for (int k = 0; k < T; k++)
 	{

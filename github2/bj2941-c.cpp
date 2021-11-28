@@ -9,7 +9,7 @@ int main(void)
 
 	int idx;
 
-	string arr[8] = { "c=","c-","dz=","d-","lj","nj","s=","z=" };
+	string arr[8] = { "c=","c-","dz=","d-","lj","nj","s=","z=" };   // 별로 없기 때문에 새로운 배열 문자열을 만들어 초기화한다.
 
 	for (int i = 0; i < 8; ++i) {
 		while (true) {

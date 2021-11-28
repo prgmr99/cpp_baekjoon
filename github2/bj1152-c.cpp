@@ -46,7 +46,7 @@ using namespace std;
 	getline(cin, str);
 	int cnt = 0;
 	bool space = false;
-	if (str.empty())
+	if (str.empty())  // 문자열이 없는 경우
 	{
 		cout << "0";
 		return 0;
@@ -59,9 +59,9 @@ using namespace std;
 			cnt++;
 	}
 
-	if (str[0] == ' ')
+	if (str[0] == ' ')  // 문자열의 가장 앞에 공백이 있는 경우
 		cnt--;
-	if (str[str.length() - 1] == ' ')
+	if (str[str.length() - 1] == ' ')  // 문자열의 가장 뒤에 공백이 있는 경우
 		cnt--;
 	cout << cnt;
 	return 0;
