@@ -66,10 +66,10 @@
     <ClCompile Include="bj4344-c.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bj10250.cpp">
+    <ClCompile Include="bj2869-c.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bj2869-c.cpp">
+    <ClCompile Include="bj10250-c.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
