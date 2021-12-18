@@ -6,15 +6,15 @@ using namespace std;
 
 int PeopleInHouse(int a, int b)
 {
-	if (a == 0)
+	if (a == 0 || b == 1)
 	{
-		if (b == 1)
-			return 1;
+		if (b != 1)
+			return b;
 		else
-			return b * (b + 1) / 2;
+			return 1;
 	}
 	else
-		PeopleInHouse(a - 1, b) + PeopleInHouse(a, b - 1);
+		return PeopleInHouse(a - 1, b) + PeopleInHouse(a, b - 1);
 }
 
 
@@ -22,8 +22,12 @@ int main(void)
 {
 	int tcase, a, b;
 	cin >> tcase;
-	cin >> a;
-	cin >> b;
-	cout << PeopleInHouse(a, b) << endl;
+	
+	for (int i = 0; i < tcase; i++)
+	{
+		cin >> a;
+		cin >> b;
+		cout << PeopleInHouse(a, b) << endl;
+	}
 	return 0;
 }
