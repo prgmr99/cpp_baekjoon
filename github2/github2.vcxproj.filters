@@ -75,7 +75,7 @@
     <ClCompile Include="bj2775-c.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bj2839.cpp">
+    <ClCompile Include="bj2839-c.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
