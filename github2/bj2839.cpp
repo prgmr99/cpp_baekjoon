@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main(void)
+/*int main(void)
 {
 	int num, result, lweight;
 	cin >> num;
@@ -34,4 +34,32 @@ int main(void)
 	if (lweight != 0)
 		cout << "-1" << endl;
 	return 0;
+}*/
+
+/*int main(void) {
+	int kg;
+	cin >> kg;
+
+	int fnum;
+	int tnum = 0;
+	fnum = kg / 5;
+
+	while (1) {
+		if (fnum < 0) {
+			cout << "-1" << endl;
+			return 0;
+		}
+		if ((kg-(5*fnum))%3==0) {
+			tnum = (kg - (5 * fnum)) / 3;
+			break;  // 바로 반복문 탈출.
+		}
+		fnum--;
+	}
+	cout << fnum + tnum << endl;
+	return 0;
+}*/
+// 좋은 코드는 아닌 것 같다.
+
+int main(void) {
+
 }
