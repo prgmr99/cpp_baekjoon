@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 int main(void) {
@@ -10,17 +9,25 @@ int main(void) {
 
 	for (int i = num1; i <= num2; i++) {
 		for (int j = 2; j <= i; j++) {
-			if (i % j == 0)
+			if (i % j == 0) {
 				cnt++;
+				if (cnt > 2)
+					break;
+			}
 		}
-		if (cnt == 2) {
+		if (cnt == 1) {
 			sum += i;
 			if (i < min)
 				min = i;
 		}
 		cnt = 0;
 	}
-	cout << sum << endl;
-	cout << min << endl;
+	if (sum == 0) {
+		cout << "-1" << endl;
+	}
+	else {
+		cout << sum << endl;
+		cout << min << endl;
+	}
 	return 0;
 }
