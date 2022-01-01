@@ -138,7 +138,7 @@
     <ClCompile Include="bj1427-hc.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bj11650.cpp">
+    <ClCompile Include="bj11650-hc.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
