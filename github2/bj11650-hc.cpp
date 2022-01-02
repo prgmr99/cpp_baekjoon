@@ -31,6 +31,7 @@ bool compare(pair<int, int> a, pair<int, int> b) {
 }
 
 int main(void) {
+	
 	vector<pair<int, int>> vec;
 
 	int n;
