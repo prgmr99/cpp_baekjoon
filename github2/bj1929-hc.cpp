@@ -33,7 +33,7 @@ int main(void) {
 
 	for (int i = M; i <= N; i++) {
 		rt = sqrt(i);
-		if (rt == 1 && i != 1) {	// 2,3인 경우
+		if (rt == 1 && i != 1) {	// rt가 int형이어서 2,3인 경우 그대로 출력하게 한다.
 			cout << i << '\n';
 			continue;
 		}
@@ -47,4 +47,5 @@ int main(void) {
 			}
 		}
 	}
+	return 0; 
 }

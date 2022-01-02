@@ -27,7 +27,7 @@ using namespace std;
 	int num;
 	cin >> num;
 	int cnt = num;
-	int input[100] = { 0, };
+	int input[100] = { 0, };   // 입력받는 소수의 개수가 100개 이하이므로 가능.
 	for (int i = 0; i < num; i++) {
 		cin >> input[i];
 		if (input[i] == 1)  // 입력값이 1이면 입력받은 수의 개수에서 하나씩 제거
@@ -43,7 +43,7 @@ using namespace std;
 				break;
 			}
 		}
-	cout << cnt;
+	cout << cnt; // 소수가 아닌 것들을 제거한 후 나머지 값을 출력.
 	return 0;
 }*/
 // 에라토스테네스의 접근 방법: 효율적이고 빠른 계산 가능

@@ -25,12 +25,12 @@ int main(void) {
 	scanf("%d", &num);
 	for (int i = 0; i < num; i++) {
 		long long x, y;
-		long long move, max = 0;
+		long long move, max = 0;    // max는 최고 이동 속력이다.
 		cin >> x >> y;
 		while (max * max <= y - x)
 			max++;					// 만족하는 max값을 찾아도 마지막에 한번 더 더해지기 때문에
 		max--;						// 여기서 한번 빼준다.
-		move = 2 * max - 1;			// 
+		move = 2 * max - 1;			
 		long long rem = y - x - max * max;
 		rem = (long long)ceil((double)rem / (double)max);
 		move += rem;
