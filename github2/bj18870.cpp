@@ -10,7 +10,7 @@ int main(void) {
 	int temp;
 	for (int i = 0; i < num; i++) {
 		cin >> x;
-		v.push_back(x);
+		v[i] = x;
 	}
 	for (int i = 0; i < num; i++) {
 		temp = v[i];
@@ -19,6 +19,7 @@ int main(void) {
 				cnt++;
 		}
 		cout << cnt << ' ';
+		cnt = 0;
 	}
 	return 0;
 }
