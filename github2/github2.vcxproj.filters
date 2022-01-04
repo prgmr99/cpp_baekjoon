@@ -132,9 +132,6 @@
     <ClCompile Include="bj2751.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bj2108.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="bj1427-hc.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -148,6 +145,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="bj18870-hc.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bj2108-hc.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

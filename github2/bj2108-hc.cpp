@@ -5,7 +5,7 @@
 using namespace std;
 
 int main(void) {
-	int n, temp, range, mid = 0, mostVal, mean = 0;
+	int n, range, mid = 0, mostVal, mean = 0;
 	int most = -9999;
 	int numbers[8001] = { 0, };
 	bool not_first = false;
