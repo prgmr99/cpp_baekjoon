@@ -153,5 +153,8 @@
     <ClCompile Include="bj2798-hc.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="bj2231-cc.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
