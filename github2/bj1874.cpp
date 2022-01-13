@@ -1,34 +1,60 @@
 #include <iostream>
 #include <stack>
 #include <algorithm>
-#include <vector>
+//#include <vector>
+#include <string>
 using namespace std;
 
-int main(void) {
+/*int main(void) {
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 	cout.tie(NULL);
-
 	stack <int> st;
-	vector <int> v1;
-	int n, M = 0;
+	string str = "";
+	int n;
 	cin >> n;
-	for (int i = 0; i < n; i++) {
-		cin >> v1[i];
-		M = max(M, v1[i]);
-	}
-	vector <int> v2(v1);
-	sort(v1.begin(), v1.end());
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < n; j++) {
-			if (v1[j] == v2[i]) {
-				st.pop();
-				cout << '-' << '\n';
+	int m = 0;
+
+	while (n--) {
+		int num;
+		cin >> num;
+		if (num > m) {
+			while (num > m) {
+				st.push(++m);
+				str += '+';
 			}
-			else {
-				st.push(v1[j]);
-				cout << '+' << '\n';
+			st.pop();
+			str += '-';
+		}
+		else {
+			bool found = false;
+			if (!st.empty()) {
+				if (num == st.top()) {
+					found = true;
+				}
+				st.pop();
+				str += '-';
+			}
+			if (!found) {
+				cout << "NO" << '\n';
+				return 0;
 			}
 		}
+	}
+	for (auto num : str) {  // 범위 기반 loop // num 모두 출력.
+		cout << num << '\n';
+	}
+	return 0;
+}*/
+
+int main(void) {
+	stack <int> st;
+	int n;
+	cin >> n;
+	string str = "";
+	int m = 0;
+	while (n--) {
+		int num;
+		cin >> num;
 	}
 }
