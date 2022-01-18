@@ -54,4 +54,4 @@ int main(void) {
 	for (int i = 0; i < n; i++)
 		cout << ans[i] << ' ';
 	return 0;
-}*/
+}*/  
