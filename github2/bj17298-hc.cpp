@@ -16,7 +16,7 @@ int seq[1000001];
 		s.push(num);
 	}
 }*/
-int main(void) {
+/*int main(void) {
 	int N;
 	stack<int> s;
 	cin >> N;
@@ -33,8 +33,8 @@ int main(void) {
 	for (int i = 0; i < N; i++)
 		cout << ans[i] << ' ';
 	return 0;
-}
-/*int main(void) {
+}*/
+int main(void) {
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 	cout.tie(NULL);
@@ -54,4 +54,7 @@ int main(void) {
 	for (int i = 0; i < n; i++)
 		cout << ans[i] << ' ';
 	return 0;
-}*/  
+} 
+
+// 그냥 가장 왼쪽만 따지면 된다.
+// ~보다 큰 수중에서 가장 작은 수를 구하는 것x
