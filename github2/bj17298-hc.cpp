@@ -4,8 +4,8 @@
 #include <vector>
 using namespace std;
 
-//int ans[1000001];
-//int seq[1000001];
+int ans[1000001];
+int seq[1000001];
 /*int main(void) {
 	stack<int> s;
 	
@@ -16,7 +16,7 @@ using namespace std;
 		s.push(num);
 	}
 }*/
-/*int main(void) {
+int main(void) {
 	int N;
 	stack<int> s;
 	cin >> N;
@@ -33,8 +33,11 @@ using namespace std;
 	for (int i = 0; i < N; i++)
 		cout << ans[i] << ' ';
 	return 0;
-}*/
-int main(void) {
+}
+/*int main(void) {
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
 	int n;
 	cin >> n;
 	vector<int> arr(n), ans(n, - 1);  // -1의 값으로 n개에 할당한다.
@@ -51,4 +54,4 @@ int main(void) {
 	for (int i = 0; i < n; i++)
 		cout << ans[i] << ' ';
 	return 0;
-}
+}*/
