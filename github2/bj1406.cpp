@@ -15,20 +15,11 @@ int main(void) {
 	cin >> str;
 	int n, cs;
 	cin >> n;
-	cs = n;
+	cin.ignore();
 	for (int i = 0; i < n; i++) {
 		string order;
-		cin >> order;
-		if (order == "L") {
-			cs -= 1;
-			if (cs == 0)
-				pass;
-		}
-		if (order == "D") {
-			cs += 1;
-			if(cs==)
-		}
-	}
+		getline(cin, order);
+
 	return 0;
 }
 
