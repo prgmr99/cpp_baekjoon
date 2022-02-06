@@ -27,7 +27,7 @@ int main(void) {
 			q.pop();
 			cnt++;
 		}*/
-		for (int i = 0; i < k - 1; i++) {
+		for (int i = 0; i < k - 1; i++) { // 2번만 반복하기 때문에 맞음.
 			q.push(q.front());
 			q.pop();
 		}
