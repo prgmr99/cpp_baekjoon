@@ -138,5 +138,6 @@ int main(void) {
 				cout << "]\n";
 			}
 		}
+	}
 	return 0;
 }
