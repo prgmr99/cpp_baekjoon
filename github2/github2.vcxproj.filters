@@ -267,7 +267,10 @@
     <ClCompile Include="bj9325-c.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bj2445.cpp">
+    <ClCompile Include="bj2445-c.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bj2446.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
