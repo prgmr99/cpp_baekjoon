@@ -1,22 +1,18 @@
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
 int main(void) {
-	int n, k, cnt = 0;
-	vector<int> v;
-	cin >> n >> k;
-	
-	for (int i = 1; i <= n; i++) {
-		if (n % i == 0) {
-			v.push_back(i);
-			cnt++;
+	int n;
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		for (int j = i; j < n - 1; j++) {
+			cout << ' ';
 		}
+		for (int j = 0; j <= i; j++) {
+			cout << "* ";
+		}
+		cout << '\n';
 	}
-	if (cnt < k)
-		cout << 0;
-	else
-		cout << v[k - 1];
 	return 0;
 }
